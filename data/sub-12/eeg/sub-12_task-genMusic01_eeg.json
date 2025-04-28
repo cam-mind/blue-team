@@ -1,0 +1,9 @@
+{
+	"TaskName": "GeneratedMusic",
+	"SamplingFrequency": 1000,
+	"SoftwareFilters": "n/a",
+	"EEGChannelCount": 30,
+	"ECGChannelCount": 1,
+	"EEGReference": "placed on FCz",
+	"PowerLineFrequency": 50
+}

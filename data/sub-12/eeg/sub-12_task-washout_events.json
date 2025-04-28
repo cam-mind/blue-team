@@ -1,0 +1,42 @@
+{
+	"1":
+	{
+		"LongName":	"ExpStart",
+		"Description": "Start of the experiment"
+	},
+	"10":
+	{
+		"LongName":	"TTL",
+		"Description": "TTL pulse recieved from fMRI scanner"
+	},
+	"47":
+	{
+		"LongName":	"TTL-relay",
+		"Description": "TTL-pulse relayed via experiment paradigm"
+	},
+	"265":
+	{
+		"LongName":	"Artifact:pulse",
+		"Description": "Pulse artifact"
+	},
+	"768":
+	{
+		"LongName":	"Trial start",
+		"Description": "Start of trial, music played to participants."
+	},
+	"1283":
+	{
+		"LongName":	"ecg:Q-wave-onset, QRS-onset",
+		"Description": "ecg:Q-wave-onset, QRS-onset"
+	},
+	"1285":
+	{
+		"LongName":	"ecg:S-wave-onset, S-wave-peak",
+		"Description": "ecg:S-wave-onset, S-wave-peak"
+	},
+	"34053":
+	{
+		"LongName":	"unused",
+		"Description": "unused"
+	}
+}
