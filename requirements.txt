@@ -1,0 +1,14 @@
+nibabel
+pandas
+numpy
+matplotlib
+seaborn
+pyedflib
+nilearn
+bids-validator
+jupyter
+gradio
+streamlit
+python-dotenv
+openai==0.28.1
+gdown
