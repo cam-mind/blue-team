@@ -13,17 +13,17 @@ def plot_mean_bold_signal(data, affine):
     mean_fmri_img = nib.Nifti1Image(mean_fmri_data, affine)
 
     #Plot
-    fig = plotting.plot_epi(mean_fmri_img)
-    st.pyplot(fig)
+    #fig = plotting.plot_epi(mean_fmri_img)
+    #st.pyplot(fig)
 
     # # Create plot
-    # display = plotting.plot_epi(mean_fmri_img, display_mode='ortho')
+    display = plotting.plot_epi(mean_fmri_img, display_mode='ortho')
 
     # # Retrieve the current matplotlib figure
-    # fig = plt.gcf()
+    fig = plt.gcf()
 
     # # Show plot in Streamlit
-    # st.pyplot(fig)
+    st.pyplot(fig)
 
     # # Close display to avoid memory leak
-    # display.close()
+    display.close()
