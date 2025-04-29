@@ -185,13 +185,16 @@ else:
 #### FOR NOW I HAVE DONE THE FOLLOWING : the user will have first a fixed set of options to select from 
 #### and only later access to the chatbox to have more ad-hoc queries with the model.
 from analysis_and_visualisation.plot_voxel_timeseries import plot_voxel_timeseries
+from analysis_and_visualisation.plot_mean_bold_signal import plot_mean_bold_signal
+from analysis_and_visualisation.plot_bold_signal_across_time import plot_bold_signal_across_time
 # Import others as needed
 st.header("🔍 Choose an Action on the Imaging Data")
 
 actions = [
     "Plot Voxel Time Series",
-    "Plot Mean BOLD Signal (Coming Soon)",
-    "Extract Timecourse from ROI (Coming Soon)",
+    "Plot Mean BOLD Signal",
+    "Extract Timecourse from ROI (Coming Soon)", #<- not yet implemented
+    "Plot BOLD signal across time"
 ]
 
 selected_action = st.selectbox("Select an analysis to perform:", actions)
@@ -205,7 +208,24 @@ if st.button("Run Selected Analysis"):
         plot_voxel_timeseries(data, coords=(x, y, z))
 
     elif selected_action == "Plot Mean BOLD Signal":
-        st.info("This action is not yet implemented.")
+        
+        plot_mean_bold_signal(data, affine)
+    
+    elif selected_action =='Plot BOLD Signal across time':
+        st.title("fMRI Viewer")
+
+        # Slider
+        timepoint = st.slider(
+            "Select Timepoint",
+            min_value=0,
+            max_value=data.shape[-1] - 1,
+            value=0
+        )
+        # Call plotting function from external script and show figure
+        fig = plot_bold_signal_across_time(data, timepoint, affine)
+        st.pyplot(fig)
+
+
 
     else:
         st.info("This action is not yet implemented.")
