@@ -8,15 +8,16 @@ This repository also generates a PDF file that outlines the initial steps for an
 
 The generated PDF file provides:
 
-The modality of the data used (EEG or fMRI)
-Detailed information regarding sequences and adquisition times, among others
-Guidance on subsequent preprocessing steps
-Quality control metrics
-Relevant warnings/recommendations
-Visualization plots and their interpretation
+- The modality of the data used (EEG or fMRI)
+- Detailed information regarding sequences and adquisition times, among others
+- Guidance on subsequent preprocessing steps
+- Quality control metrics
+- Relevant warnings/recommendations
+- Visualization plots and their interpretation
+
 How to use:
 
-Drop in your data files (EEG formats: .edf, .tsv, .json; or fMRI formats:.nii/.nii.gz)
-Select the plots you want to visualise
-Use the PDF for summary information on your data and guidance on how to begin preprocessing and analysis
-Use the chatbot for help with understanding and interpretation
+1. Drop in your data files (EEG formats: .edf, .tsv, .json; or fMRI formats:.nii/.nii.gz)
+2. Select the plots you want to visualise
+3. Use the PDF for summary information on your data and guidance on how to begin preprocessing and analysis
+4. Use the chatbot for help with understanding and interpretation
